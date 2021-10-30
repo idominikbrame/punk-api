@@ -1,6 +1,16 @@
 .App {
   text-align: center;
 }
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+li {
+  min-width: 30%;
+  margin: 10px;
+  list-style: none;
+}
 
 img {
   height: 100px;
@@ -11,7 +21,7 @@ img {
 .liked {
   border: none;
   border-radius: 5px;
-  background-color: red;
+  background-color: deeppink;
   color: white;
 }
 

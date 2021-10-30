@@ -33,15 +33,14 @@ export default class App extends Component {
           this.removeLike(beer)
           return
       } else {
-          this.setState({likes: this.state.likes.concat(beer.name)}, () => console.log(this.state.likes))
+          this.setState({likes: this.state.likes.concat(beer.name)}, () => console.log(this.state.beers))
       }
   }
 
   render() {
     return (
-        <div>
-          <h1>Hello World</h1>
-          <Beers beers={this.state.beers} likes={this.state.likes} likeBeerMethod = {this.likeBeerMethod} removeLike={this.removeLike}/>
+        <div className={"flexbox"}>
+            <Beers beers={this.state.beers} likes={this.state.likes} likeBeerMethod = {this.likeBeerMethod} removeLike={this.removeLike}/>
         </div>
 
     )
